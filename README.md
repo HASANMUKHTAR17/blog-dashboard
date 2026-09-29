@@ -1,16 +1,32 @@
-# React + Vite
+# 📝 Blog Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A React blog management dashboard built with hooks, custom hooks, memoization, and Redux Toolkit for scalable state management.
 
-Currently, two official plugins are available:
+## Features
+- Reusable components: Header, SearchBar, BlogCard, BlogList, BlogStats
+- Custom hook (`useFilteredBlogs`) with `useMemo` for efficient search/category filtering
+- Performance optimization using `React.memo` and `useCallback`
+- `useRef` to auto-focus the search input on page load
+- Redux Toolkit for centralized state: blogs, search text, category, loading, and error states
+- Async data loading simulated with `createAsyncThunk`, including loading and error UI states
+- Add, delete, and favorite/unfavorite blogs
+- Responsive, clean UI
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+- React (Hooks, Context-free architecture)
+- Redux Toolkit + React Redux
+- Vite
+- JavaScript (ES6+)
+- CSS
 
-## React Compiler
+## Run Locally
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+\`\`\`bash
+git clone https://github.com/HASANMUKHTAR17/blog-dashboard.git
+cd blog-dashboard
+npm install
+npm run dev
+\`\`\`
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Live Demo
+Coming soon
