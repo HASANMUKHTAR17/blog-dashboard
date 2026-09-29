@@ -29,4 +29,4 @@ npm run dev
 \`\`\`
 
 ## Live Demo
-Coming soon
+🔗 https://HASANMUKHTAR17.github.io/blog-dashboard
